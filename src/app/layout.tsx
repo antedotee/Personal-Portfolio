@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import DarkModeProvider from "@/context/DarkModeContext";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
+import { Meteors } from "@/components/ui/meteors";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -41,13 +42,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <DarkModeProvider>
-        <body className={`bg-white dark:bg-black`}>
+        <body className="bg-white dark:bg-black relative overflow-hidden">
           <Toaster position="bottom-right" />
           <Theme className="dark:!bg-black">
-            <Navbar />
-            {children}
-            <Analytics />
-            <Footer />
+            <div className="relative z-10">
+              <Navbar />
+              {children}
+              <Analytics />
+              <Footer />
+            </div>
+            <div className="fixed inset-0 pointer-events-none overflow-hidden">
+              <Meteors number={100} className="opacity-50" />
+            </div>
           </Theme>
         </body>
       </DarkModeProvider>
