@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "@radix-ui/themes";
-import { FaWhatsapp } from "react-icons/fa";
+// import { FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { bricolage_grotesque } from "@/utils/fonts";
 import { Input } from "@/components/ui/input";
