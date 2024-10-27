@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { data, error } = await resend.emails.send({
-      from: "Fardeen <onboarding@resend.dev>",
+      from: "Kartik <onboarding@resend.dev>",
       to: ["soniyadav2051982@gmail.com"],
       subject: "Message from Your Portfolio",
       react: EmailTemplate({ Email: email, Message: message }),
