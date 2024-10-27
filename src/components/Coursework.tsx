@@ -23,7 +23,7 @@ const Coursework = () => {
 
   const { isDarkMode } = darkModeContext;
   return (
-    <div className="w-1/2 max-lg:w-full max-lg:px-20 max-sm:w-full max-sm:px-5 flex flex-col items-center mt-4 pb-8">
+    <div className="w-1/2 max-lg:w-full max-lg:px-20 max-sm:w-full max-sm:px-5 flex flex-col items-center mt-4 pb-8 bg-content">
       <Title title="Coursework" />
 
       <span className="mt-2"></span>
@@ -94,7 +94,7 @@ const data: I_Coursework[] = [
   },
   {
     course_link: "https://www.udemy.com/course/web-dev-master/",
-    course_company_logo: "/cdnlogo.com_udemy.svg",
+    course_company_logo: "/cdnlogo.com_udemy.jpg",
     course_title: "Complete Web Development Course",
     duration: "Sep 2024 - Sep 2025",
     course_company_name: "Udemy",
@@ -103,7 +103,7 @@ const data: I_Coursework[] = [
   },
   {
     course_link: "https://www.maang.in/",
-    course_company_logo: "/algozenith.svg",
+    course_company_logo: "/algozenith.jpg",
     course_title: "Applied Data Structures and Algorithm",
     duration: "May 2024 - May 2025",
     course_company_name: "Algozenith",

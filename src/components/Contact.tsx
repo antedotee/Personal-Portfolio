@@ -89,7 +89,10 @@ const Contact = () => {
 
         <div className="w-full flex justify-center">
           <div className="mt-4 w-full">
-            <form className="flex flex-col gap-4" onSubmit={sendEmailMessage}>
+            <form
+              className="flex flex-col gap-4 bg-content"
+              onSubmit={sendEmailMessage}
+            >
               <div className="grid w-full gap-2">
                 <Label htmlFor="message">Your Email</Label>
                 <Input

@@ -20,7 +20,7 @@ const About = () => {
             >
               {item.year}
             </h1>
-            <div className="flex pl-2 mt-4">
+            <div className="flex pl-2 mt-4 bg-content">
               <div className={`w-full flex flex-col gap-3`}>
                 {item.events.map((event, idx) => (
                   <div
@@ -34,7 +34,7 @@ const About = () => {
                         className="w-8 bg-black dark:bg-gray-400"
                       />
                     </span>
-                    <span className="text-[15px] max-sm:text-sm dark:text-[#dfdede]">
+                    <span className="text-[15px] max-sm:text-sm dark:text-[#dfdede] ">
                       {event}
                     </span>
                   </div>
