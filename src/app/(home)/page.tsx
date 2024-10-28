@@ -11,6 +11,7 @@ import { inter, bricolage_grotesque } from "@/utils/fonts";
 import About from "../about/components/About";
 import Contact from "@/components/Contact";
 import { motion } from "framer-motion";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function Home() {
   return (
@@ -28,9 +29,10 @@ export default function Home() {
           </div>
           <div className="mt-4 px-32 max-sm:px-4">
             <h1
-              className={`!text-[3rem] mt-2 max-sm:!text-[1.6rem] !whitespace-nowrap font-bold tracking-tight text-center ${bricolage_grotesque} bg-content`}
+              className={`!text-[4.5rem] mt-2 max-sm:!text-[2.2rem] !whitespace-nowrap font-bold tracking-tight text-center ${bricolage_grotesque} bg-content`}
             >
-              Hi, I&apos;m Kartik Yadav👋
+              {/* Hi, I&apos;m Kartik Yadav👋 */}
+              <TextGenerateEffect words="Hi, I'm Kartik Yadav👋" />
             </h1>
 
             <h1
