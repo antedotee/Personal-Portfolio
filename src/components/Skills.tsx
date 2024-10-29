@@ -38,6 +38,7 @@ const skillSlugs = {
   Streamlit: "streamlit",
   Clerk: "clerk",
   Prisma: "prisma",
+  Docker: "docker",
 };
 
 export function IconCloudDemo() {

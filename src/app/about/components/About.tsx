@@ -122,22 +122,22 @@ const data: I_About[] = [
   {
     year: 2024,
     events: [
-      "Dove deep into Web Development, mastering cutting-edge technologies and building several innovative projects (and counting). 🚀",
-      "Started my journey in Web3 development, creating decentralized applications and embracing blockchain technology. ⛓",
-      "Proud of the progress I've made so far—each step has been a leap forward in my career.",
+      // "Dove deep into Web Development, mastering cutting-edge technologies and building several innovative projects (and counting). 🚀",
+      "Started taking learning seriously. Learning about web3 and backend development. ⛓",
+      // "Proud of the progress I've made so far—each step has been a leap forward in my career.",
     ],
   },
   {
     year: 2023,
     events: [
-      "Started my B.tech journey without prior programming knowledge and quickly developed a love for coding. 🚀",
+      "Started my B.tech. Tried every new shiny thing I could lay my hands on, got to know that its just better to stick to one thing.",
     ],
   },
   {
     year: 2022,
     events: [
       "Graduated from 12th with a 91% score. 📜",
-      "Gave JEE exam and failed pretty badly.I guess that is what you get when you don't study straight for 2 years.",
+      "Gave JEE exam and failed pretty badly. I guess that is what you get when you don't study straight for 2 years.",
     ],
   },
   {
@@ -149,20 +149,21 @@ const data: I_About[] = [
   {
     year: 2019,
     events: [
-      "Like any curious engineer, I spent my teenage years exploring, tinkering, and experimenting with technology.",
+      // "Like any curious engineer, I spent my teenage years exploring, tinkering, and experimenting with technology.",
       "Started playing PUBG mobile and went into the very deep rabbit hole, practiced competitively for 2 years.",
     ],
   },
   {
     year: 2011,
     events: [
-      "Discovered computers for the first time, played games on it day in and day out. 💻",
+      "Discovered computers for the first time, played games on it day in and day out like IGI 2 and Counter Strike. 💻",
     ],
   },
   {
     year: 2004,
     events: [
-      "The year I was born, the first future software engineer in the family! 👶🏼 🍼",
+      // "The year I was born, the first future software engineer in the family! 👶🏼 🍼",
+      "Year I was born",
     ],
   },
 ];

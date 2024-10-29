@@ -38,11 +38,13 @@ export default function Home() {
             <h1
               className={`mt-2 max-sm:mt-5 max-sm:px-3 !text-base max-sm:!text-sm text-center !font-normal !tracking-normal inter !leading-6 ${inter} bg-content`}
             >
-              Full Stack Web Developer Building Impactful Web Applications. I
+              {/* Full Stack Web Developer Building Impactful Web Applications. I
               specialize in creating production-ready web apps from the ground
               up, with a focus on both frontend and backend development.
               Passionate about solving real-world problems and always open to
-              new challenges.
+              new challenges. */}
+              Part time developer. Full time trader. Still figuring out what to
+              learn.
             </h1>
           </div>
           <div className="mt-10">
@@ -93,7 +95,7 @@ export default function Home() {
           institute_name={"Newton School of Technology"}
           CGPA={9.18}
           description={
-            "Doing B.Tech, excited to learn about AI and ML.In first year, I learned about frontend development. In the second year, I learned about backend development."
+            "Doing B.Tech here. Nothing fancy. Everyday learning new things from everybody else here."
           }
         />
       </div>
