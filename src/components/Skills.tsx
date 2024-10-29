@@ -35,6 +35,9 @@ const skillSlugs = {
   Remix: "remix",
   "Framer Motion": "framer",
   Python: "python",
+  Streamlit: "streamlit",
+  Clerk: "clerk",
+  Prisma: "prisma",
 };
 
 export function IconCloudDemo() {
