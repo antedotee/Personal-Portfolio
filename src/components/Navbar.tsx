@@ -29,11 +29,18 @@ const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const pathname = usePathname();
 
+  const handleHomeClick = (e) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="w-full py-6 flex justify-center fixed top-0 z-50">
       <div className="rounded-full w-[850px] max-lg:w-[800px] max-[400px]:w-[345px] max-[450px]:w-[400px] max-[350px]:w-[330px] max-[321px]:w-[310px] px-2 py-1 bg-white bg-opacity-10 backdrop-blur-md border dark:border-white/20 flex items-center justify-center dark:shadow-none shadow">
         <div className="flex justify-center px-2 items-center max-sm:gap-4 gap-8 max-[400px]:gap-4 max-[450px]:gap-5 transition-all">
-          <Link href="/" underline="none">
+          <Link href="/" underline="none" onClick={handleHomeClick}>
             <Tooltip content="Home">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <HomeIcon
