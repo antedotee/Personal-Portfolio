@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { useContext } from "react";
-import { Link, Separator, Tooltip } from "@radix-ui/themes";
+import Link from "next/link";
+import { Separator, Tooltip } from "@radix-ui/themes";
 import {
   GitHubLogoIcon,
   SunIcon,
@@ -29,18 +30,11 @@ const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const pathname = usePathname();
 
-  const handleHomeClick = (e: React.MouseEvent) => {
-    if (pathname === "/") {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-  };
-
   return (
     <nav className="w-full py-6 flex justify-center fixed top-0 z-50">
       <div className="rounded-full w-[850px] max-lg:w-[800px] max-[400px]:w-[345px] max-[450px]:w-[400px] max-[350px]:w-[330px] max-[321px]:w-[310px] px-2 py-1 bg-white bg-opacity-10 backdrop-blur-md border dark:border-white/20 flex items-center justify-center dark:shadow-none shadow">
         <div className="flex justify-center px-2 items-center max-sm:gap-4 gap-8 max-[400px]:gap-4 max-[450px]:gap-5 transition-all">
-          <Link href="/" underline="none" onClick={handleHomeClick}>
+          <Link href="/" passHref>
             <Tooltip content="Home">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <HomeIcon
@@ -54,7 +48,7 @@ const Navbar = () => {
             </Tooltip>
           </Link>
 
-          <Link href="/projects">
+          <Link href="/projects" passHref>
             <Tooltip content="Projects">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <CodeIcon
@@ -68,7 +62,7 @@ const Navbar = () => {
             </Tooltip>
           </Link>
 
-          <Link href="/blogs">
+          <Link href="/blogs" passHref>
             <Tooltip content="Blog">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <RowsIcon
@@ -82,7 +76,7 @@ const Navbar = () => {
             </Tooltip>
           </Link>
 
-          <Link href="/about">
+          <Link href="/about" passHref>
             <Tooltip content="About">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <IoPerson
@@ -105,7 +99,7 @@ const Navbar = () => {
           <Link
             href="https://drive.google.com/file/d/1YPvgH9z5roncGciaizhNBTR8hCidJVz0/view?usp=sharing"
             target="_blank"
-            underline="none"
+            passHref
           >
             <Tooltip content="Resume">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
@@ -114,7 +108,7 @@ const Navbar = () => {
             </Tooltip>
           </Link>
 
-          <Link href="https://github.com/antedotee" target="_blank">
+          <Link href="https://github.com/antedotee" passHref target="_blank">
             <Tooltip content="Github">
               <div className="hover:px-3 max-sm:hover:px-2 py-2.5 dark:hover:bg-[#262626] hover:bg-[#F4F4F5] rounded-full transition-all duration-300">
                 <GitHubLogoIcon className="w-[19px] h-[19px] max-sm:w-[15px] max-sm:h-[15px] text-black dark:text-white" />
@@ -124,6 +118,7 @@ const Navbar = () => {
 
           <Link
             href="https://x.com/intent/follow?screen_name=antiidotee_"
+            passHref
             target="_blank"
           >
             <Tooltip content="X">
@@ -135,6 +130,7 @@ const Navbar = () => {
 
           <Link
             href="https://www.linkedin.com/in/kartik-yadav-3a625a1a6"
+            passHref
             target="_blank"
           >
             <Tooltip content="Linkedin">
