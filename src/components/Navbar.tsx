@@ -29,7 +29,7 @@ const Navbar = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const pathname = usePathname();
 
-  const handleHomeClick = (e) => {
+  const handleHomeClick = (e: React.MouseEvent) => {
     if (pathname === "/") {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
